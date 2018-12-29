@@ -76,7 +76,7 @@ a:hover {
   height: 50px;
   vertical-align: middle;
 }
-h3 {
+h3, h1, h2 {
   text-align: center;
 }
   .post-content img {
