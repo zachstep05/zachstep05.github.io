@@ -40,7 +40,6 @@ body {
   max-width: 1000px;
   margin: 20 px;
 }
-<style>
 img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
@@ -59,9 +58,7 @@ img:hover {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-<img src="cookie.jpg","cookies.jpg" width="300" height="300">
-
-</style>
+<img src="cookie.jpg","cookies.jpg">
   .column {
   float: left;
   width: 40%;
