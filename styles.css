@@ -76,6 +76,9 @@ a:hover {
   height: 50px;
   vertical-align: middle;
 }
+  .post-container img {
+    vertical-align: middle;
+}
 .post-author span {
   margin-left: 25px;
 }
