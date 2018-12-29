@@ -26,6 +26,7 @@ padding: 60px 0;
   float: left;
   font-size: 30px;
   font-weight: bold;
+  margin-top: 0;
 }
 #header-nav {
   display: block;
