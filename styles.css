@@ -1,13 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 body {
   margin: 0;
-  color: #D3D3D3;
+  color: #696969;
   font-family: 'Montserrat', sans-serif;
 }
 #header {
-  background-color: #1abc9c;
-  height: 150px;
-  line-height: 150px;
+  background-color: #696969;
+  height: 50px;
+  line-height: 50px;
 }
   #header a {
     color: white;
@@ -16,12 +16,12 @@ body {
     letter-spacing: 0.1em;
   }
   #header a:hover {
-    color: #222;
+    color: #FFFFFF;
   }
 #header-title {
   display: block;
   float: left;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 #header-nav {
@@ -31,11 +31,11 @@ body {
 }
 #header-nav li {
   display: inline;
-  padding-left: 20px;
+  padding-left: 50px;
 }
 .container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 20 px;
 }
 #footer {
   background-color: #2f2f2f;
