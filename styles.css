@@ -131,8 +131,10 @@ line-height: 1.5;
 }
 .icon-bar {
   top: 10%;
-  
-}
+    -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  }
 .icon-bar a {
   display: block;
   text-align: left;
