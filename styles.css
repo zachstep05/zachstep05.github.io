@@ -112,7 +112,7 @@ h1, h2, h3, h4 {
   color: #696969;
 }
 h5 {
-  color: #808080;
+  color: #D3D3D3;
 }
 p {
 line-height: 1.5;
@@ -146,7 +146,7 @@ line-height: 1.5;
 
 /* Add some padding inside the card container */
 .container {
-  padding: 8px 48px;
+  padding: 2px 16px;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
