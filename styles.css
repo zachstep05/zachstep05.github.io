@@ -45,9 +45,10 @@ body {
   width: 50%;
   padding: 5px;
 }
+/* Clearfix (clear floats) */
 .row::after {
-  clear: both;
   content: "";
+  clear: both;
   display: table;
 }
 #footer {
