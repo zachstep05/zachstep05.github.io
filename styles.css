@@ -36,23 +36,25 @@ body {
   display: inline;
   padding-left: 20px;
 }
-.container {
-  max-width: 1000px;
-  margin: 20 px;
-}
 * {
   box-sizing: border-box;
 }
-  .column {
+
+.column {
   float: left;
-  width: 25%;
+  width: 33.33%;
   padding: 5px;
 }
+
 /* Clearfix (clear floats) */
 .row::after {
   content: "";
   clear: both;
   display: table;
+}
+.container {
+  max-width: 1000px;
+  margin: 20 px;
 }
 #footer {
   background-color: #2f2f2f;
