@@ -76,6 +76,9 @@ a:hover {
   height: 50px;
   vertical-align: middle;
 }
+p.title {
+  text-align: center;
+}
   .post-content img {
     vertical-align: middle;
 }
