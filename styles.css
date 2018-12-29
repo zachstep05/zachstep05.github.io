@@ -41,7 +41,7 @@ body {
   margin: 20 px;
 }
   .column {
-  float: middle;
+  float: left;
   width: 50%;
   padding: 5px;
 }
