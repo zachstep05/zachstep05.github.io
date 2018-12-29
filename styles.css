@@ -58,8 +58,8 @@ img:hover {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-<img src="cookie.jpg" width: 40%>
-<img src="cookies.jpg" width: 40%>
+<img src="cookie.jpg" width="300" height="300">
+<img src="cookies.jpg" width="300" height="300">
 
   .column {
   float: left;
