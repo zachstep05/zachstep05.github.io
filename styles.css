@@ -111,6 +111,9 @@ h3, h1, h2 {
 h1, h2, h3, h4 {
   color: #696969;
 }
+h5 {
+  color: #FFFFFF;
+}
 p {
 line-height: 1.5;
 }
