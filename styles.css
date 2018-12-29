@@ -47,6 +47,7 @@ body {
 }
 .row::after {
   clear: both;
+  content: "";
   display: table;
 }
 #footer {
