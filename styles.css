@@ -46,7 +46,7 @@ body {
   .column {
   float: left;
   width: 25%;
-  padding: 50px;
+  padding: 5px;
 }
 /* Clearfix (clear floats) */
 .row::after {
