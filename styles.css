@@ -131,10 +131,10 @@ line-height: 1.5;
 }
 .icon-bar {
   position: relative;
-  top: 10%;
-    -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  width:400px;
+  height:40px;
+  left:10px;
+  top:60px;
   }
 .icon-bar a {
   display: block;
