@@ -40,6 +40,9 @@ body {
   max-width: 1000px;
   margin: 20 px;
 }
+* {
+  box-sizing: border-box;
+}
   .column {
   float: left;
   width: 25%;
