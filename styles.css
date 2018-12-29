@@ -124,7 +124,3 @@ line-height: 1.5;
 .post-container:nth-child(even) {
   background-color: #f2f2f2;
 }
-.center {
-  display: block;
-  vertical-align: middle;
-}
