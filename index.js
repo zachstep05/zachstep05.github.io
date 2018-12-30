@@ -1,3 +1,4 @@
+<body>
 <p id="demo"></p>
 
 <script>
@@ -30,3 +31,4 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
+</body>
