@@ -165,3 +165,16 @@ line-height: 1.5;
 .container {
   padding: 2px 8px;
 }
+* {
+  box-sizing: border-box;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
