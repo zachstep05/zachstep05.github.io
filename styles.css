@@ -136,9 +136,6 @@ line-height: 1.5;
 .about-author img {
   border-radius: 50%;
 }
-.post-container:nth-child(even) {
-  background-color: #f2f2f2;
-}
 * {
   box-sizing: border-box;
 }
