@@ -136,28 +136,3 @@ line-height: 1.5;
 .about-author img {
   border-radius: 50%;
 }
-* {
-  box-sizing: border-box;
-}
-/* Style the counter cards */
-.card {
-  padding: 16px;
-  text-align: center;
-  background-color: #696969;
-}
-
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-}
-
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 8px;
-}
-
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
