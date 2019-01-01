@@ -47,7 +47,7 @@ body {
   padding: 30px;
   font-size: 40px;
   text-align: center;
-  background: ##323232;
+  background: #323232;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -73,7 +73,7 @@ body {
 
 /* Add a card effect for articles */
 .card {
-  background-color: ##323232;
+  background-color: #323232;
   padding: 20px;
   margin-top: 20px;
 }
@@ -89,7 +89,7 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: ##323232;
+  background: #323232;
   margin-top: 20px;
 }
 
