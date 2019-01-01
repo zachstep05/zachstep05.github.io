@@ -1,11 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 body {
   margin: 0;
-  color: #323232;
+  color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
 }
 #header {
-  background-color: #323232;
+  background-color: #FFFFFF;
   height: 50px;
   line-height: 50px;
 }
