@@ -82,7 +82,7 @@ body {
 .row:after {
   content: "";
   display: table;
-  clear: both;
+  clear: all;
 }
 
 /* Footer */
@@ -113,7 +113,7 @@ body {
 /* Clearfix (clear floats) */
 .row::after {
   content: "";
-  clear: both;
+  clear: all;
   display: table;
 }
 .container {
