@@ -77,12 +77,6 @@ body {
   margin-top: 20px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .leftcolomn {
   float: left;
   width: 50%;
