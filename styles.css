@@ -59,7 +59,7 @@ body {
 
 /* Right column */
 .rightcolumn {
-  float: right, top;
+  float: left;
   width: 25%;
   padding-left: 20px;
 }
