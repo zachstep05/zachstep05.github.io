@@ -56,15 +56,6 @@ body {
   float: left;
   width: 75%;
 }
-.leftcolomn {
-  float: left;
-  width: 50%;
-}
-.rightcolomn {
-  float: right;
-  width: 50%;
-  padding-left: 20px
-}
 /* Right column */
 .rightcolumn {
   float: left;
@@ -91,6 +82,15 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+.leftcolomn {
+  float: left;
+  width: 50%;
+}
+.rightcolomn {
+  float: right;
+  width: 50%;
+  padding-left: 20px
 }
 
 /* Footer */
