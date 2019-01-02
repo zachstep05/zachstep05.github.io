@@ -55,6 +55,7 @@ body {
 .leftcolumn {
   float: left;
   width: 75%;
+  padding-left: 20px;
 }
 /* Right column */
 .rightcolumn {
@@ -80,6 +81,7 @@ body {
 .leftcolomn {
   float: left;
   width: 50%;
+  padding-left: 20px;
 }
 .rightcolomn {
   float: right;
