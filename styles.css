@@ -204,6 +204,9 @@ line-height: 1.5;
   display: table;
   clear: both;
 }
+  .checked {
+  color: orange;
+}
   
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
