@@ -14,7 +14,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    padding-left: 20px;
+    padding-left: 0px;
   }
   #header a:hover {
     color: #FFFFFF;
