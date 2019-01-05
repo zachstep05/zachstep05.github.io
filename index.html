@@ -2,7 +2,13 @@
 <html>
  <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>body {background-color:#000000;</style>
+  <style>
+   @media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+   body {background-color:#000000;</style>
   <title>Zach Stephens</title>
  <link rel="stylesheet" type="text/css"href="styles.css"></head>
  <body><div id="header">
