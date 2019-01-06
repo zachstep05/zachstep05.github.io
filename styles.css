@@ -38,7 +38,7 @@ body {
 }
 body {
   font-family: Arial;
-  padding: 30px;
+  padding: 20px;
   background: #000000;
 }
 
@@ -70,10 +70,7 @@ body {
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 10000px;
-  margin: 20 px;
-}
+
 #footer {
   background-color: #2f2f2f;
   padding: 75px 0;
