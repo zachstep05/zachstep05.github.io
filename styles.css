@@ -70,13 +70,6 @@ body {
   box-sizing: border-box;
 }
 
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .container {
   max-width: 10000px;
   margin: 20 px;
@@ -95,10 +88,6 @@ body {
     color: white;
   }
 
-.column {
-  min-width: 300px;
-  display: inline-block;
-  vertical-align: top;
 }
 a {
   color: #1abc9c;
