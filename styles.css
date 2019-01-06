@@ -278,3 +278,19 @@ body{
    <img src="IMG_0104.JPG" style="max-width:100%;height:auto;">
   <img src="img.jpg" style="max-width:100%;height:auto;"> 
  
+.leftcolumn, leftcolomn {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.rightcolumn, rightcolomn {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn, .rightcolomn, .leftcolomn {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
