@@ -68,3 +68,12 @@ body {
   margin-right: auto;
   width: 50%;
 }
+h1, h2, h4 {
+  color: #EAF2F8;
+}
+h5 {
+  color: #F4ECF7
+}
+h6 {
+  color: #17202A
+}
