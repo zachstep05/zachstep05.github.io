@@ -62,11 +62,11 @@ body {
     padding: 0;
   }
 }
-h1, h2, h3, h4 {
+h2, h3, h5 {
   color: #EAF2F8;
 }
-h5 {
-  color: #F4ECF7
+h1, h4 {
+  color: #34495E
 }
 h6 {
   color: #17202A
