@@ -76,3 +76,6 @@ h1, h4 {
   margin-right: auto;
   width: 50%;
 }
+img {
+  float: left;
+}
