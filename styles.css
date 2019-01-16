@@ -16,6 +16,9 @@ body {
 /* Left column */
 .clearfix {
   overflow: auto;
+   p {
+     float: right;
+  }
 }
 
 /* Right column */
@@ -31,18 +34,11 @@ body {
   padding: 20px;
   margin-top: 20px;
   img {
-  float: right;
+  float: left;
 }
   p {
      float: right;
   }
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Footer */
@@ -55,7 +51,7 @@ body {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
+  .clearfix, .rightcolumn {
     width: 100%;
     padding: 0;
   }
