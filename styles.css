@@ -34,6 +34,9 @@ body {
   img {
   float: left;
 }
+  h1, h4 {
+     float: right;
+  }
 }
 
 /* Clear floats after the columns */
