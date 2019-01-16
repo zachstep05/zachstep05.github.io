@@ -31,6 +31,7 @@ body {
   background-color: #7F8C8D;
   padding: 20px;
   margin-top: 20px;
+  text-align: right;
 }
 
 /* Clear floats after the columns */
