@@ -31,7 +31,6 @@ body {
   background-color: #7F8C8D;
   padding: 20px;
   margin-top: 20px;
-  text-align: right;
 }
 
 /* Clear floats after the columns */
@@ -67,6 +66,9 @@ h6 {
 }
 h3, h2, h5, h6 {
   text-align: center;
+}
+h1, h4 {
+  text-align: right;
 }
 .center {
   display: block;
