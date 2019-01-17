@@ -19,6 +19,9 @@ body {
    p {
      float: right;
   }
+    img {
+  float: left;
+  }
 }
 
 /* Right column */
