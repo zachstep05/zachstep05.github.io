@@ -14,14 +14,9 @@ body {
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.clearfix {
-  overflow: auto;
-   p {
-     float: right;
-  }
-    img {
-  float: left;
-  }
+.leftcolumn {
+ float: left;
+  width: 50%;
 }
 
 /* Right column */
