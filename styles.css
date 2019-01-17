@@ -15,8 +15,13 @@ body {
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
- float: left;
-  width: 50%;
+position: relative;
+}
+.p {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+
 }
 
 /* Right column */
