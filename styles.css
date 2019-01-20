@@ -34,8 +34,11 @@ body {
     padding: 0;
   }
 }
-h2, h3, h5 {
+h2, h3 {
   color: #EAF2F8;
+}
+h5 {
+  color: #1B2631
 }
 h1, h4 {
   color: #34495E
