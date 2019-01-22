@@ -84,9 +84,6 @@ img {
   background-color: #1B2631; /* Add an active/current color */
 }
  /* Style the form element with a border around it */
-form {
-  border: 4px solid #f1f1f1;
-}
 
 /* Add some padding and a grey background color to containers */
 .contaner {
