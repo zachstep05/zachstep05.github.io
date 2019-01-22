@@ -92,7 +92,7 @@ img {
 }
 
 /* Style the input elements and the submit button */
-input[type=text], input[type=submit] {
+imput[type=text], imput[type=submit] {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
@@ -102,12 +102,12 @@ input[type=text], input[type=submit] {
 }
 
 /* Add margins to the checkbox */
-input[type=checkbox] {
+imput[type=checkbox] {
   margin-top: 16px;
 }
 
 /* Style the submit button */
-input[type=submit] {
+imput[type=submit] {
   background-color: #1B2631;
   color: white;
   border: none;
