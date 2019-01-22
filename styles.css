@@ -137,4 +137,6 @@ button {
     height: 44px;
     font-size: 22px;
 }
-
+form {
+  vertical-align: center;
+}
