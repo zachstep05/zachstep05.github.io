@@ -91,6 +91,7 @@ img {
   background-color: #f1f1f1;
 }
 
+.container-news {
 /* Style the input elements and the submit button */
 imput[type=text], imput[type=submit] {
   width: 100%;
@@ -100,12 +101,8 @@ imput[type=text], imput[type=submit] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
-/* Add margins to the checkbox */
-imput[type=checkbox] {
-  margin-top: 16px;
 }
-
+.container-boi {
 /* Style the submit button */
 imput[type=submit] {
   background-color: #1B2631;
@@ -116,7 +113,9 @@ imput[type=submit] {
 input[type=submit]:hover {
   opacity: 0.8;
 } 
+}
 .article-container {
+  vertical-align: center;
   width: 900px;
   background-color: #fff;
   padding: 30px;
