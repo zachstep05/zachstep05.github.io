@@ -11,11 +11,7 @@ body {
   text-align: center;
   background: #1B2631;
 }
-#myUL li a {
-  border: 1px solid #ddd; /* Add a border to all links */
-  margin-top: -1px; /* Prevent double borders */
-/* Add a card effect for articles */
-}
+
 .card {
   background-color: #7F8C8D;
   padding: 20px;
