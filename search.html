@@ -10,36 +10,77 @@
   <a href="news.html"><i class="fa fa-user-circle-o"></i></a>
 </div>
 <link rel="stylesheet" type="text/css"href="styles.css">
-<script type="text/javascript" src="search.js"></script>
-   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+
+<h2>My Phonebook</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
 <ul id="myUL">
-  <li><a href="post3.html">  <div class="card">
-    <img src="Image 67.jpg" width=30% align="right">
-        <p class="Lucida Grande"><h1 style="font-size:3vw;">Blueberry BBQ sauce</h1>
-      <h4>Unique twist of blueberries,
-       <br> Jan 2nd 2019</h4>
-</div>
-  <li><a href="post2.html"> <div class="card">
-        <img src="Image 65.jpg" width=30% align="right">
+  <li><a href="#">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
 
-        <p class="Lucida Grande"><h1 style="font-size:3vw;">Almond cookies</h1>
-      <h4>Stephens secret almond recipe,
-       <br> Jan 1st 2019</h4>
-</div></a></li>
-
-  <li><a href="#"><div class="card">
-    <img src="Image 62.jpg" width=30% align="right">
-      <p class="Lucida Grande"><h1 style="font-size:3vw;">Choc-Chip Cookies</h1>
-      <h4>Stephens secret choc-chip recipe,
-       <br> Dec 30, 2018</h4>
-               <li><a href="post1.html"><p><h6><font size="4">Full recipe</font></h6></p></a></li>
-
-     <br>
-</div></a></li>
+  <li><a href="#">Billy</a></li>
   <li><a href="#">Bob</a></li>
 
   <li><a href="#">Calvin</a></li>
   <li><a href="#">Christina</a></li>
   <li><a href="#">Cindy</a></li>
-</ul> 
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
