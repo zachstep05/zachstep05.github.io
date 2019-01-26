@@ -16,8 +16,8 @@ p.Monospace {
 
 .card {
   background-color: #7F8C8D;
-  padding: 5px;
-  margin-top: 5px;
+  padding: 20px;
+  margin-top: 15px;
 }
 
 /* Footer */
@@ -45,10 +45,10 @@ h1, h4 {
 h6 {
   color: #17202A
 }
-h1, h3, h2, h5 {
+h3, h2, h5 {
   text-align: center;
 }
-h4, h6 {
+h1, h4, h6 {
   text-align: left;
 }
 .center {
