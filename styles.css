@@ -18,7 +18,11 @@ p.Monospace {
   padding: 20px;
   margin-top: 15px;
 }
-
+.cad {
+   background-color: #7F8C8D;
+  padding: 20px;
+  margin-top: 15px;
+}
 /* Footer */
 .footer {
   padding: 0px;
