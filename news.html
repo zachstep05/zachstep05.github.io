@@ -11,16 +11,12 @@
 </div>
 <link rel="stylesheet" type="text/css"href="styles.css">
  
-<div class="simple-subscription-form">
-  <form>
-    <h4>Newsletter</h4>
-    <p>Receive updates and latest news. Simply enter your email below :</p>
-    <div class="input-group">
-      <span class="input-group-label">
-        <i class="fa fa-envelope"></i>
-      </span>
-      <input class="input-group-field" type="email" placeholder="Email" required>
-      <button class="button">Subscribe</button>
-  </form>
-</div>
+<form data-newsletter method="POST" action="...">
+    <input data-newsletter-email type="email" name="email">
+    <button data-newsletter-button>Subscribe</button>
+</form>
 
+<div data-newsletter-message 
+     data-newsletter-error-email="No valid email" 
+     data-newsletter-error-ajax="Submission failed">
+</div>
