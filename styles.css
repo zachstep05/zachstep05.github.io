@@ -13,18 +13,6 @@ p.Monospace {
   text-align: center;
   background: #1B2631;
 }
-.simple-subscription-form {
-  background: #0c3e5f;
-  color: #fefefe;
-  padding: 2rem;
-  border-radius: 0;
-}
-
-.simple-subscription-form .button {
-  margin-bottom: 0;
-  border-radius: 0 0 0 0;
-}
-
 .card {
   background-color: #7F8C8D;
   padding: 20px;
