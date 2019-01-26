@@ -16,17 +16,3 @@
     <button data-newsletter-button>Subscribe</button>
 </form>
 
-<div data-newsletter-message 
-     data-newsletter-error-email="No valid email" 
-     data-newsletter-error-ajax="Submission failed">
-</div>
-const options = {
-    $form = $form || $('.js-newsletter');
-    $email = $email || $('.js-newsletter-email');
-    $button = $button || $('.js-newsletter-button');
-    $message = $message || $('.js-newsletter-message');
-    responseKeys: {message: "customMessageField", type: "customTypeField"},
-    cssClasses: {error: "-custom-error", success: "-custom-success"},
-};
-
-new NewsletterForm(options);
