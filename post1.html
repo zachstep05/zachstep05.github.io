@@ -12,6 +12,93 @@
 <style>body {background-color:#A9A9A9;</style><title>Choc-chip cookies</title><link rel="stylesheet" type="text/css"href="styles.css"></head><body><div id="content"><div class="container"></div></div><div class="post"><h3><strong><font size="6">Chocolate chip cookie recipe</font></strong></h3><h3><font size="4">29/12/18</font></h3><h2><b><font size="5">This is seriously the Best Chocolate Chip Cookie Recipe Ever!<br>I have been making these for many years and everyone who tries them agrees they’re delicious!<br>These are everything a chocolate chip cookie should be. Crispy and chewy. Doughy yet fully baked.</font></b></h2><div class="row"><div class="column"><img src="IMG_3064.JPG" alt="cookies" style="width:75%" class="center"></div></div><div class="card"><div class="container"><p><h5><strong><font size="4">Makes 2-3 dozen<br><br><em><font size="5">INGREDIENTS</font></em><br>1/2 cup (1 stick) butter, softened<br>1/2 cup firmly packed brown sugar<br>1/4 cup granulated sugar<br>1 egg<br>1/2 teaspoon vanilla extract<br>3/4 cups flour<br>1/2 teaspoon baking soda<br>1/2 teaspoon cinnamon<br>1/4 teaspoon salt<br>1 and 1/2 cups oats<br>1 cup chocolate chips<br><br></font></h5></p><p></div></div><br><div class="post-content">
   <div class="card"><div class="container"><p><em><h5 class="Monospace"><font size="5">INSTRUCTIONS</font></em><br><em><font size="4">PREHEAT</em> oven to 180°C/350°F<br><em>BEAT</em> butter and sugars until creamy.<br><em>ADD</em> the egg and vanilla; beat well.<br><em>ADD</em> combined flour, baking soda, cinnamon and salt, mix well.<br><em>STIR IN</em> chocolate chips and oats, mix well.<br><em>DROP</em> by rounded tablespoons onto ungreased baking sheets.</p><br><p><em>BAKE</em> for 10 to 12 minutes.<br><em>COOL</em> on baking sheets for 1 minute; remove to wire rack.</font></strong></h5></p><br></div></div><div id="div1" class="fa">
 </div><br><br><br></div></div></div></div>
+<body onload="show();">
+	<div>Time: <span id="time"></span></div>
+	<input type="button" value="start" onclick="start();">
+	<input type="button" value="stop" onclick="stop();">
+	<input type="button" value="reset" onclick="reset()">
+</body>
+<script type="text/javascript">
+var	clsStopwatch = function() {
+		// Private vars
+		var	startAt	= 0;	// Time of last start / resume. (0 if not running)
+		var	lapTime	= 0;	// Time on the clock when last stopped in milliseconds
 
+		var	now	= function() {
+				return (new Date()).getTime(); 
+			}; 
+ 
+		// Public methods
+		// Start or resume
+		this.start = function() {
+				startAt	= startAt ? startAt : now();
+			};
+
+		// Stop or pause
+		this.stop = function() {
+				// If running, update elapsed time otherwise keep it
+				lapTime	= startAt ? lapTime + now() - startAt : lapTime;
+				startAt	= 0; // Paused
+			};
+
+		// Reset
+		this.reset = function() {
+				lapTime = startAt = 0;
+			};
+
+		// Duration
+		this.time = function() {
+				return lapTime + (startAt ? now() - startAt : 0); 
+			};
+	};
+
+var x = new clsStopwatch();
+var $time;
+var clocktimer;
+
+function pad(num, size) {
+	var s = "0000" + num;
+	return s.substr(s.length - size);
+}
+
+function formatTime(time) {
+	var h = m = s = ms = 0;
+	var newTime = '';
+
+	h = Math.floor( time / (60 * 60 * 1000) );
+	time = time % (60 * 60 * 1000);
+	m = Math.floor( time / (60 * 1000) );
+	time = time % (60 * 1000);
+	s = Math.floor( time / 1000 );
+	ms = time % 1000;
+
+	newTime = pad(h, 2) + ':' + pad(m, 2) + ':' + pad(s, 2) + ':' + pad(ms, 3);
+	return newTime;
+}
+
+function show() {
+	$time = document.getElementById('time');
+	update();
+}
+
+function update() {
+	$time.innerHTML = formatTime(x.time());
+}
+
+function start() {
+	clocktimer = setInterval("update()", 1);
+	x.start();
+}
+
+function stop() {
+	x.stop();
+	clearInterval(clocktimer);
+}
+
+function reset() {
+	stop();
+	x.reset();
+	update();
+}
   </body>
 </html>
