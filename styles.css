@@ -139,7 +139,7 @@ input {
 }
 
 button {
-  
+   vertical-align: center;
   width: 100px;
     height: 44px;
     font-size: 22px;
