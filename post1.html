@@ -19,5 +19,59 @@
 <button id="start08637">Start</button>
 <button id="stop44129">Stop</button>
 <button id="reset96523">Reset</button>
+<script type="text/javascript">
+  {
+
+const display_ele = document.getElementById("display29700");
+
+let StartedDateTime = new Date;
+let ElapsedTime = 0;
+let IntvID = null;
+let TimerIsOn = false;
+let TimerUpdateFrequency = 100; // millisecond
+
+const fstart = (() => {
+    StartedDateTime = new Date;
+    fdisplay("start");
+})
+
+const fstop = (() => {
+    ElapsedTime = Date.now () - StartedDateTime.getTime();
+    fdisplay("stop");
+});
+
+const freset = (() => {
+    ElapsedTime = 0;
+    fdisplay("stop");
+    display_ele.firstChild.nodeValue = "0";
+});
+
+const updateDisplay = (() => {
+    display_ele.firstChild.nodeValue = ( (Date.now () - StartedDateTime.getTime()) / 1000 ).toFixed (2);
+});
+
+const fdisplay = ((p_startStop) => {
+    if (p_startStop === "start") {
+        if ( TimerIsOn === true ) {}
+        else {
+            TimerIsOn = true;
+            IntvID = setInterval( updateDisplay , TimerUpdateFrequency);
+        }
+    } else {
+        if (IntvID !== null ) {
+            window.clearInterval(IntvID);
+        }
+        TimerIsOn = false;
+        updateDisplay();
+    }
+});
+
+document.getElementById("start08637").addEventListener("click", fstart , false);
+
+document.getElementById("stop44129").addEventListener("click", fstop , false);
+
+document.getElementById("reset96523").addEventListener("click", freset , false);
+
+}
   </body>
 </html>
