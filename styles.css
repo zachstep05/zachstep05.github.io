@@ -13,11 +13,6 @@ p.Monospace {
   text-align: center;
   background: #1B2631;
 }
-.card {
-  background-color: #7F8C8D;
-  padding: 20px;
-  margin-top: 15px;
-}
 .cad {
    background-color: #7F8C8D;
   padding: 20px;
@@ -90,7 +85,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #7F8C8D;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
