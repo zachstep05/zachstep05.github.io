@@ -6,10 +6,7 @@ body {
 p.Monospace {
   font-family: "Lucida Console";
 }
-img {
-  width: 28%;
-  height: auto;
-}
+
 /* Header/Blog Title */
 .header {
   padding: 0px;
@@ -29,7 +26,10 @@ img {
   background: #ddd;
   margin-top: 20px;
 }
-
+img {
+  width: 28%;
+  height: auto;
+}
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .clearfix, .rightcolumn {
