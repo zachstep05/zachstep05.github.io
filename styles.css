@@ -76,6 +76,12 @@ body {
   padding: 10px;
    padding-bottom: 5px;
 }
+.columnn {
+  float: middle;
+  width: 50%;
+  padding: 10px;
+   padding-bottom: 5px;
+}
 
 /* Remove extra left and right margins, due to padding in columns */
 .row {margin: 0 -5px;}
