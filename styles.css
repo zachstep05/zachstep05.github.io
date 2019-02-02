@@ -97,10 +97,6 @@ body {
   }
 }
 
-img {
-  width: 28%;
-  height: auto;
-}
 .icon-bar {
   width: 100%; /* Full-width */
   background-color: #555; /* Dark-grey background */
