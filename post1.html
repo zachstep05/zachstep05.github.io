@@ -16,64 +16,83 @@
 </html>
 <div class="card"><div class="container"> <h5 class="Monospace"><font size="4"> These cookies need to be baked for 600 seconds, start time now:</font><h5>
   <h1 style="font-size:4vw;">Elapsed time:
-<span id="display29700">0.0</span>
-  </h1>
+   <script type="text/javascript">
+var minutes = 0;
+var interval;
 
-<button id="start08637">Start</button>
-<button id="stop44129">Stop</button>
-<button id="reset96523">Reset</button>
-<script type="text/javascript">
-  {
+function timer() {
+  minutes = minutes - 1;
 
-const display_ele = document.getElementById("display29700");
+  document.getElementById("txt").innerHTML= minutes + " minutes"; // watch for spelling
 
-let StartedDateTime = new Date;
-let ElapsedTime = 0;
-let IntvID = null;
-let TimerIsOn = false;
-let TimerUpdateFrequency = 100; // millisecond
-
-const fstart = (() => {
-    StartedDateTime = new Date;
-    fdisplay("start");
-})
-
-const fstop = (() => {
-    ElapsedTime = Date.now () - StartedDateTime.getTime();
-    fdisplay("stop");
-});
-
-const freset = (() => {
-    ElapsedTime = 0;
-    fdisplay("stop");
-    display_ele.firstChild.nodeValue = "0";
-});
-
-const updateDisplay = (() => {
-    display_ele.firstChild.nodeValue = ( (Date.now () - StartedDateTime.getTime()) / 1000 ).toFixed (2);
-});
-
-const fdisplay = ((p_startStop) => {
-    if (p_startStop === "start") {
-        if ( TimerIsOn === true ) {}
-        else {
-            TimerIsOn = true;
-            IntvID = setInterval( updateDisplay , TimerUpdateFrequency);
-        }
-    } else {
-        if (IntvID !== null ) {
-            window.clearInterval(IntvID);
-        }
-        TimerIsOn = false;
-        updateDisplay();
-    }
-});
-
-document.getElementById("start08637").addEventListener("click", fstart , false);
-
-document.getElementById("stop44129").addEventListener("click", fstop , false);
-
-document.getElementById("reset96523").addEventListener("click", freset , false);
-
+  if (minutes <= 0) {
+     //counter ended, do something here
+     window.clearInterval(interval);
+     return;
+  }
 }
+
+
+function checktimer() {
+    var checkbox1 = form.preference.value;
+    var checkbox2 = form.eggsize.value;
+    var checkbox3 = form.suacepansize.value;
+
+    if(checkbox1 == 1 && checkbox2 == 1 && checkbox3 == 1) {
+        minutes = 3;
+        s = 0;
+    }
+
+    interval = setInterval(timer, 1000);
+
+    return false;
+}
+
 </script>
+
+</head>
+<body>
+<div id = "txt"> </div>
+
+    <form id="form" onsubmit="return checktimer()">
+
+    <div class = "question">
+    <div class="circle"> <h2 class = "whiteh2"> 1 </h2></div>
+    <div class="question-text"><h6>How do you like your egg? </h6> </div>
+    <select id="prefernce" name ="preference">
+  <option value="1">Soft</option>
+  <option value="2">Medium</option>
+  <option value="3">Hard</option>
+</select>
+
+    </div> <!--Ends the question div-->
+
+<div class = "question">
+    <div class="circle"> <h2 class = "whiteh2"> 2 </h2></div>
+    <div class="question-text"><h6>What size is your egg? </h6> </div>
+    <select id="eggsize" name = "eggsize">
+  <option value="1">Small</option>
+  <option value="2">Medium</option>
+  <option value="3">Large</option>
+</select>
+
+    </div> <!--Ends the question div-->
+
+    <div class = "question">
+    <div class="circle"> <h2 class = "whiteh2"> 3 </h2></div>
+    <div class="question-text"><h6>What size is the saucepan? </h6> </div>
+    <select id="saucepansize" name = "suacepansize">
+  <option value="1">Small</option>
+  <option value="2">Medium</option>
+  <option value="3">Large</option>    
+      </select>
+
+    </div> <!--Ends the question div-->
+
+        <div class = "question">
+            <input type="submit" id="button" name="submit" value = "Go"/> <br/> 
+        </div>
+
+    </form>
+
+    </div>  <!--Ends the main form div-->
