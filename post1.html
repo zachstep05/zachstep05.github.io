@@ -14,9 +14,9 @@
 </div><br></div></div></div></div>
   </body>
 </html>
-<div class="card"><div class="container"> <h5 class="Monospace"><font size="4"> These cookies need to be baked for 9-11 minutes.</font><h5>
+<div class="card"><div class="container"> <h5 class="Monospace"><font size="4"> These cookies need to be baked for 10-12 minutes (600 seconds).</font><h5>
   <h1 style="font-size:4vw;">Time left:
-  <p id="demo">5</p>
+  <p id="demo">600</p>
 <button onclick="myTimerObj.start()">Start</button>
 <button onclick="myTimerObj.end()">Stop</button>  
     <script>
@@ -26,7 +26,7 @@
 
    function start() {
      myTimer = setInterval(myClock, 1000);
-     var c = 600;
+     var c = 600 secondes;
 
      function myClock() {
        document.getElementById("demo").innerHTML = --c;
