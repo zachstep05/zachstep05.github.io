@@ -1,0 +1,72 @@
+      <img src="84774596-9313-4B98-822B-8F911E10BC06.jpeg" alt="PM" style="width:100%">
+      <h3>Particulate Matter</h3></a>
+      <p>What is it? Where is it? How does it affect us? ...</p>
+    </div>
+    <div class="w3-quarter"><a href="Post14.html">
+      <img src="5DEE7845-3323-44E0-981A-D73BAB693F86.jpeg" alt="homonyms" style="width:100%">
+	    <h3>Homonyms</h3></a>
+      <p>Heterographs, Heterophones, synonyms...</p>
+    </div>
+  </div>
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter"><a href="Post15.html">
+      <img src="10986105-FB16-4744-AF74-7594E510743A.jpeg" alt="Earth" style="width:100%">
+	    <h3>Greenhouse gases</h3></a>
+      <p>What are they? Where do they come from? What are there affects?.</p>
+    </div>
+
+
+    <div class="w3-quarter"><a href="Post16.html">
+      <img src="66912C9C-85D9-40C8-BCEB-E8B834D0F843.jpeg" alt="Moon" style="width:100%">
+	    <h3>The moon</h3></a>
+      <p>Tidal effects, eclipses, components, surface gravity...</p>
+    </div>
+    <div class="w3-quarter"><a href="Post17.html">
+      <img src="B9E0E2E1-DADF-4CAF-84A7-29F699AD8200.jpeg" alt="lightning" style="width:100%">
+	    <h3>Lightning</h3></a>
+      <p>What is lightning? What is thunder?... and other questions</p>
+    </div>
+    <div class="w3-quarter"><a href="Post19.html">
+      <img src="DF4AE8A2-19B2-4931-A066-16ECEEFDB786.jpeg" alt="Motivational salience" style="width:100%">
+	    <h3>Motivational salience</h3></a>
+      <p>What is it? Is it addictive? What is dopamine?</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+   
+   <!-- Footer -->
+	<h3>About me</h3>
+	<p>coming soon coming soon coming soon coming soon coming soon coming soon coming soon coming soon</p>
+	<br><br><br> <p>Affiliate links:</p>
+	<a href="https://amzn.to/2ZL8931"><p>Laser pointer</p></a>
+	<a href="https://amzn.to/2HUbx0t"><p>UHD 43 inch LG TV</p></a>
+	<a href="https://amzn.to/2HPf7ZZ"><p>Smart pet feeder</p></a>
+	<a href="https://amzn.to/2ZJRdd9"><p>pet car seat</p></a>
+	<a href="https://amzn.to/2ZWmeGi"><p>Dog poo bags</p></a>
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+  function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
